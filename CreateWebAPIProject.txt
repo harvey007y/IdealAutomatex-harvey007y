@@ -25,7 +25,7 @@ namespace First {
       IdealAutomate.Core.Methods myActions = new Methods();
       myActions.ScriptStartedUpdateStats();
 
-     
+     initializeComponent();
       window.Hide();
 
       string strWindowTitle = myActions.PutWindowTitleInEntity();
