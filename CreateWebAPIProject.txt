@@ -25,7 +25,7 @@ namespace First {
       IdealAutomate.Core.Methods myActions = new Methods();
       myActions.ScriptStartedUpdateStats();
 
-     initializeComponent();
+    
       window.Hide();
 
       string strWindowTitle = myActions.PutWindowTitleInEntity();
@@ -2435,7 +2435,7 @@ newTop = 0;
 
 		myExit:
       myActions.ScriptEndedSuccessfullyUpdateStats();
-      Application.Current.Shutdown();
+    
     }
 		private static BitmapSource BitmapSourceFromImage(System.Drawing.Image img)
 		{
