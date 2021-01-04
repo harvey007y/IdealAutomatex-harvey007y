@@ -10,7 +10,7 @@ namespace First {
   /// Interaction logic for MainWindow.xaml
   /// </summary>
   public partial class Program : Window {
-    public static void Main()
+    public static void Main() {
       bool boolRunningFromHome = false;
       var window = new Window() //make sure the window is invisible
 {
@@ -25,8 +25,8 @@ namespace First {
       IdealAutomate.Core.Methods myActions = new Methods();
       myActions.ScriptStartedUpdateStats();
 
-      InitializeComponent();
-      this.Hide();
+     
+      window.Hide();
 
       string strWindowTitle = myActions.PutWindowTitleInEntity();
       if (strWindowTitle.StartsWith("a2_CreateWebAPIProject")) {
